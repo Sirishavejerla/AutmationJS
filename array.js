@@ -31,3 +31,56 @@ i=2 number[2] < min
 
 console.log("Maximum value:", max);
 console.log("Minimum value:", min);
+
+/* Write a program to count the number of even and odd numbers in an array. */
+
+const num = [1, 1, 3, 4, 5,,9, 8, 7];
+let evenCount = 0;
+let oddCount = 0;
+
+function countEvenodd (num) {
+   for(let i = 0; i < num.length; i++){
+      if (num[i] % 2 === 0) {
+        evenCount++;  // Increment even count if the number is even
+        } else {
+        oddCount++;   // Increment odd count if the number is odd
+        }
+    }
+    return {
+        evenCount: evenCount,
+        oddCount: oddCount
+    };
+}
+
+const result = countEvenodd (num);
+
+console.log(`Even numbers count: ${result.evenCount}`);
+console.log(`Odd numbers count: ${result.oddCount}`);
+
+
+/* Remove duplicates from an array of numbers.*/
+
+function removeDuplicates(arr) {
+    let uniqueArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        // If the element is not already in the uniqueArray, add it
+        if (!uniqueArray.includes(arr[i])) {
+            uniqueArray.push(arr[i]);
+        }
+    }
+
+    return uniqueArray;
+}
+
+const arr = [1, 3, 2, 3, 4, 4, 6, 5, 6];
+const res = removeDuplicates(arr);
+
+console.log(res);
+
+/* Create an array of strings and sort them alphabetically.*/
+
+const arrayString = ["Apple", "Cat", "Dog", "Ball"]
+
+arrayString.sort();
+
+console.log(arrayString);
