@@ -37,5 +37,3 @@ let num = 10;
 num += 5; /* num ++; num ++; num ++; num ++; num ++; */
 console.log("Incrementing the numbber by 5 is ", num);
 
-
-
